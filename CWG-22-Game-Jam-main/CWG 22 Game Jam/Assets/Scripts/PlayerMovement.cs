@@ -22,9 +22,32 @@ public class PlayerMovement : MonoBehaviour
   bool isSwinging;
   #endregion
 
+  #region SFX
+  public AudioSource netSoundSource;
+  public AudioSource footstepsSource;
+  public AudioClip netSound;
+  public AudioClip footstepSounds;
+  public AudioClip music;
+  public AudioSource musicSource;
+  #endregion
+
     private void Awake() {
 
         PlayerRB = GetComponent<Rigidbody2D>();
+
+        netSoundSource = gameObject.AddComponent<AudioSource>();
+        netSoundSource.clip = netSound;
+        netSoundSource.volume = 0.4f;
+
+        footstepsSource = gameObject.AddComponent<AudioSource>();
+        footstepsSource.clip = footstepSounds;
+        footstepsSource.volume = 0.1f;
+  
+        musicSource = gameObject.AddComponent<AudioSource>();
+        musicSource.clip = music;
+        musicSource.volume = 0.1f;
+        musicSource.Play();
+        musicSource.loop = true; 
     }
 
     // Update is called once per frame
@@ -36,10 +59,10 @@ public class PlayerMovement : MonoBehaviour
         
         x_input = Input.GetAxisRaw("Horizontal");
         y_input = Input.GetAxisRaw("Vertical");
-
         Move();
         if (Input.GetKeyDown(KeyCode.J) && swingTimer<=0)
         {
+        netSoundSource.Play();
         Swing();
         } else {
         swingTimer -= Time.deltaTime;
@@ -49,21 +72,33 @@ public class PlayerMovement : MonoBehaviour
 
       private void Move()
   {
-    
     if(x_input > 0){
+      if (!footstepsSource.isPlaying) {
+          footstepsSource.Play();
+        }
       PlayerRB.velocity = Vector2.right * movespeed;
       currDirection = Vector2.right;
     } else if (x_input < 0) {
+        if (!footstepsSource.isPlaying) {
+          footstepsSource.Play();
+        }
       PlayerRB.velocity = Vector2.left * movespeed;
       currDirection = Vector2.left;
     } else if (y_input > 0){
+        if (!footstepsSource.isPlaying) {
+          footstepsSource.Play();
+        }
       PlayerRB.velocity = Vector2.up * movespeed;
       currDirection = Vector2.up;
 
     } else if (y_input < 0) {
+        if (!footstepsSource.isPlaying) {
+          footstepsSource.Play();
+        }
       PlayerRB.velocity = Vector2.down * movespeed;
       currDirection = Vector2.down;
     } else {
+      footstepsSource.Stop();
       PlayerRB.velocity = Vector2.zero;
 
     }

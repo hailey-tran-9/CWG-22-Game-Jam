@@ -367,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316705095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.36, y: 2.94, z: -6.0258427}
+  m_LocalPosition: {x: -0.03, y: -0.02, z: -6.0258427}
   m_LocalScale: {x: 6.701218, y: 6.701218, z: 6.701218}
   m_Children: []
   m_Father: {fileID: 0}
@@ -964,6 +964,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2503367630775493181, guid: 5baea5fff7ecacd4c80cf697d2c3b3be, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: 59d8a7a07eb17cc4e913f60d3fb99637, type: 3}
+    - target: {fileID: 2503367630775493181, guid: 5baea5fff7ecacd4c80cf697d2c3b3be, type: 3}
+      propertyPath: netSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c7a336e286c1214ab94c3861bfe6603, type: 3}
+    - target: {fileID: 2503367630775493181, guid: 5baea5fff7ecacd4c80cf697d2c3b3be, type: 3}
+      propertyPath: footsteps
+      value: 
+      objectReference: {fileID: 8300000, guid: 11d62d2832fc68540b4e2d44d8c9b0c3, type: 3}
+    - target: {fileID: 2503367630775493181, guid: 5baea5fff7ecacd4c80cf697d2c3b3be, type: 3}
+      propertyPath: footstepSounds
+      value: 
+      objectReference: {fileID: 8300000, guid: 0959250c82cc43240bba7c2dbbda5c3d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5baea5fff7ecacd4c80cf697d2c3b3be, type: 3}
 --- !u!1001 &8065587509856759209

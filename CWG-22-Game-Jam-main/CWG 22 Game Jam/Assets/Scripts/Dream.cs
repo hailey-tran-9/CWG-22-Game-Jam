@@ -18,6 +18,7 @@ public class Dream : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         child = GameObject.FindGameObjectsWithTag("Child")[0];
         SetUp();
     }
