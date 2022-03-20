@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:CWG 22 Game Jam/Assets/sprites/ph_lad.png.meta
-guid: a90b8359e9fc94b48833dd4e21cb5e8a
-=======
-guid: 96d813fbbfdbe6e47bd9d40c94eb3d1b
->>>>>>> 56bccd652d41698beb40da2b1299292cfec6e789:CWG 22 Game Jam/Assets/DreamSprites/ph_bad_dream.png.meta
+guid: b975490441131e44d909a38140200e97
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
