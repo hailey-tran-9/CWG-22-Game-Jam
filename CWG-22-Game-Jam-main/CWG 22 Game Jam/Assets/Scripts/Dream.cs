@@ -5,9 +5,12 @@ using UnityEngine;
 public class Dream : MonoBehaviour
 {
     [SerializeField] private GameObject child;
-    [SerializeField] private float speed;
+    [SerializeField] public float speed = 1f;
 
     public virtual void Action() {
+        return;
+    }
+    public virtual void SetUp() {
         return;
     }
 
@@ -16,7 +19,7 @@ public class Dream : MonoBehaviour
     void Start()
     {
         child = GameObject.FindGameObjectsWithTag("Child")[0];
-        speed = 5f;
+        SetUp();
     }
 
     // Update is called once per frame
@@ -26,7 +29,8 @@ public class Dream : MonoBehaviour
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, child.transform.position, step);
 
-        if (transform.position == child.transform.position) {
+        if (transform.position.x == child.transform.position.x && transform.position.y == child.transform.position.y) {
+            Debug.Log("reached child");
             Action();
         }
     }

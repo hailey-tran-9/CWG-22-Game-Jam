@@ -12,22 +12,17 @@ public class DreamSpawner : MonoBehaviour
     public float waveCountdown;
 
     [SerializeField] public SpawnState state; 
-    [SerializeField] public int waveProgress;
 
-    public int[] waves;
-    public int nextWave = 0;
-
-    private class Wave {
-        public int size;
-    }
+    [SerializeField] public int numWaves;
+    public int currWave;
+    
     // Start is called before the first frame update
     void Start()
     {
 
         waveCountdown = timeBetweenWaves;
         state = SpawnState.READY;
-        waveProgress = 0;
-        waves = new int[] {3, 1, 2, 1,3, 2,1, 1, 2, 1};
+        currWave = 1;
     }
 
     // Update is called once per frame
@@ -47,7 +42,7 @@ public class DreamSpawner : MonoBehaviour
     
         if (waveCountdown <= 0) {
             if (state != SpawnState.SPAWNING) {
-                StartCoroutine(SpawnWave(waves[nextWave]));
+                StartCoroutine(SpawnWave(currWave));
             } 
         }
         else {
@@ -62,42 +57,47 @@ public class DreamSpawner : MonoBehaviour
         state = SpawnState.SPAWNING;
         for (int i = 0; i < size; i++) {
             SpawnDream();
+            RandomizePosition();
+            spawnDelay = Mathf.Max(spawnDelay - currWave*0.1f, 1f);
+            yield return new WaitForSeconds(spawnDelay);
         }
 
         state = SpawnState.WAITING;
+        yield return new WaitForSeconds(timeBetweenWaves);
         yield break;
     }
 
+    void ShuffleSpawnerPosition() {
 
+    }
     void WaveCompleted() {
         state = SpawnState.COUNTING; 
         waveCountdown = timeBetweenWaves;
-        if (nextWave + 1 >= waves.Length) {
+        if (currWave == numWaves) {
             state = SpawnState.OFF;
             Debug.Log("turned off");
         }
-        nextWave++;
+        currWave++;
     }
 
-    void SpawnDream() {
-        int x = Random.Range(-19, 4);
-        int y = 0;
-        if (x > -9) {
+    void RandomizePosition() {
+        int x = Random.Range(-11, 11);
+        int y;
+        if (x == -10 || x == 10) {
+            y = Random.Range(-6, 6);
+        } else {
             int rand = Random.Range(0, 100);
             if (rand % 2 == 0) {
                 y = -5;
             } else {
                 y = 6;
             } 
-        } 
+        }
         int z = (int) transform.position.z;
-        Instantiate(dreamPrefab, new Vector3(x, y, z), Quaternion.identity);
- 
+        transform.position = new Vector3(x, y,z);
+    }
+    void SpawnDream() {
+        Instantiate(dreamPrefab, transform.position, Quaternion.identity);
    }
 
-   IEnumerator ExecuteAfterTime(float time)
- {
-     yield return new WaitForSeconds(time);
-
- }
 }
