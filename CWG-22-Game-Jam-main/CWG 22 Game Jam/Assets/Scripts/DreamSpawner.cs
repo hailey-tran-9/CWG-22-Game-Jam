@@ -32,7 +32,6 @@ public class DreamSpawner : MonoBehaviour
             return;
         }
         if (state == SpawnState.WAITING) {
-            Debug.Log(EnemiesAlive());
             if (EnemiesAlive() == false) {
                 WaveCompleted();
             } else {
@@ -93,7 +92,7 @@ public class DreamSpawner : MonoBehaviour
                 y = 6;
             } 
         }
-        int z = (int) transform.position.z;
+        int z = 0;
         transform.position = new Vector3(x, y,z);
     }
     void SpawnDream() {
