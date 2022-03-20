@@ -30,7 +30,6 @@ public class Dream : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, child.transform.position, step);
 
         if (transform.position.x == child.transform.position.x && transform.position.y == child.transform.position.y) {
-            Debug.Log("reached child");
             Action();
             child.GetComponent<Child>().ReduceHp();
         }
