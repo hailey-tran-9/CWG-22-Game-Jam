@@ -38,12 +38,13 @@ public class PlayerMovement : MonoBehaviour
         y_input = Input.GetAxisRaw("Vertical");
 
         Move();
-        if (Input.GetKeyDown(KeyCode.J)&& swingTimer<=0)
+        if (Input.GetKeyDown(KeyCode.J) && swingTimer<=0)
         {
         Swing();
         } else {
         swingTimer -= Time.deltaTime;
         }
+
     }
 
       private void Move()
@@ -76,13 +77,16 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(SwingRoutine());
   }
 
-IEnumerator SwingRoutine() {
+    IEnumerator SwingRoutine() {
     isSwinging = true;
     PlayerRB.velocity = Vector2.zero;
     RaycastHit2D[] hits = Physics2D.BoxCastAll(PlayerRB.position + currDirection, Vector2.one, 0f,Vector2.zero);
     foreach (RaycastHit2D hit in hits)
     {
-        if(hit.transform.CompareTag("Nightmare")) {
+        Debug.Log(hit.collider.name);
+        if(hit.collider.gameObject.CompareTag("Enemy")) {
+            Destroy(hit.collider.gameObject);
+            //.GetComponent<Destroy>().SelfDestruct();
         //hit.transform.GetComponent<///>().//capturedfunction for enemy
         //score goes up??
         //just destroy enemy?
