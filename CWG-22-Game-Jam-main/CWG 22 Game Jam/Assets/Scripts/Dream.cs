@@ -32,6 +32,7 @@ public class Dream : MonoBehaviour
         if (transform.position.x == child.transform.position.x && transform.position.y == child.transform.position.y) {
             Debug.Log("reached child");
             Action();
+            child.GetComponent<Child>().ReduceHp();
         }
     }
 }
