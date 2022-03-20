@@ -74,20 +74,22 @@ public class PlayerMovement : MonoBehaviour
 
   private void Swing() {
         swingTimer = swingspeed;  
-        StartCoroutine(SwingRoutine());
+        SwingHelper();
   }
 
-    IEnumerator SwingRoutine() {
+    private void SwingHelper() {
+      Debug.Log("Running SwingRoutine " + currDirection);
     isSwinging = true;
     PlayerRB.velocity = Vector2.zero;
-    RaycastHit2D[] hits = Physics2D.BoxCastAll(PlayerRB.position + currDirection, Vector2.one, 0f,Vector2.zero);
+    RaycastHit2D[] hits = Physics2D.BoxCastAll(PlayerRB.position + currDirection, new Vector2(0.5f, 0.5f), 0f, Vector2.zero, 0f);
+     //Debug.Log(PlayerRB.position + " " + PlayerRB.position + currDirection);
     foreach (RaycastHit2D hit in hits)
     {
-        Debug.Log(hit.collider.name);
-        if(hit.collider.gameObject.CompareTag("Enemy")) {
+        Debug.Log(hit.transform.tag);
+        if(hit.transform.CompareTag("Enemy")) {
+          Debug.Log("identifying Enemy");
             Destroy(hit.collider.gameObject);
-            //.GetComponent<Destroy>().SelfDestruct();
-        //hit.transform.GetComponent<///>().//capturedfunction for enemy
+            //the inside works, but it's not raycasting and hitting an enemy
         //score goes up??
         //just destroy enemy?
         //run poof animation?
@@ -99,6 +101,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     isSwinging = false;
-    yield return null;
+    return;
     }
 }
