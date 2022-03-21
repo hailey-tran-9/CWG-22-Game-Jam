@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour
 {
     // Start is called before the first frame update
-    
+    [SerializeField] public GameObject tutorialScreen;
     void Start()
     {
         
@@ -24,5 +24,10 @@ public class TitleScreen : MonoBehaviour
 
     public void OpenTutorial() {
         // SceneManager.LoadScene();
+        tutorialScreen.SetActive(true);
+    }
+
+    public void ExitTutorial() {
+        tutorialScreen.SetActive(false); 
     }
 }

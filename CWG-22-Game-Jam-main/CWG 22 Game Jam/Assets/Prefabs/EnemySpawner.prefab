@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dreamPrefab: {fileID: 386864003256123716, guid: 3c65524ba9a183c4499dba2f0d078841, type: 3}
   timeBetweenWaves: 2
-  spawnDelay: 3
+  spawnDelay: 1.13
   waveCountdown: 0
   state: 0
   numWaves: 0

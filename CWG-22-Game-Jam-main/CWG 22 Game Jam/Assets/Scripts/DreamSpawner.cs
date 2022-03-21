@@ -6,8 +6,8 @@ public class DreamSpawner : MonoBehaviour
 {
 
     [SerializeField] public GameObject dreamPrefab;
-    public float timeBetweenWaves = 2f; 
-    public float spawnDelay = 3f; 
+    [SerializeField] public float timeBetweenWaves = 2f; 
+    [SerializeField] public float spawnDelay = 3f; 
     public enum SpawnState {SPAWNING, WAITING, COUNTING, READY, OFF};
     public float waveCountdown;
 
@@ -66,9 +66,6 @@ public class DreamSpawner : MonoBehaviour
         yield break;
     }
 
-    void ShuffleSpawnerPosition() {
-
-    }
     void WaveCompleted() {
         state = SpawnState.COUNTING; 
         waveCountdown = timeBetweenWaves;

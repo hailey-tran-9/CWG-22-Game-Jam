@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         footstepsSource = gameObject.AddComponent<AudioSource>();
         footstepsSource.clip = footstepSounds;
-        footstepsSource.volume = 0.1f;
+        footstepsSource.volume = 0.3f;
   
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.clip = music;
