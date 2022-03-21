@@ -1623,7 +1623,7 @@ PrefabInstance:
       objectReference: {fileID: 632489893}
     - target: {fileID: 7569512210926792001, guid: 6bf76fc54d444d24c8260557e2bb0bf6, type: 3}
       propertyPath: m_Name
-      value: Object (1)
+      value: soda
       objectReference: {fileID: 0}
     - target: {fileID: 7808828832534712684, guid: 6bf76fc54d444d24c8260557e2bb0bf6, type: 3}
       propertyPath: m_RootOrder
@@ -2360,7 +2360,7 @@ PrefabInstance:
       objectReference: {fileID: 632489893}
     - target: {fileID: 7569512210926792001, guid: 6bf76fc54d444d24c8260557e2bb0bf6, type: 3}
       propertyPath: m_Name
-      value: Object
+      value: lego
       objectReference: {fileID: 0}
     - target: {fileID: 7808828832534712684, guid: 6bf76fc54d444d24c8260557e2bb0bf6, type: 3}
       propertyPath: m_RootOrder

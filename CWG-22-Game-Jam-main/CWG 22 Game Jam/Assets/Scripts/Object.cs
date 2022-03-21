@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Object : MonoBehaviour
 {
-    public string type = "buff";
+    public string type;
 
     // Start is called before the first frame update
     void Start()

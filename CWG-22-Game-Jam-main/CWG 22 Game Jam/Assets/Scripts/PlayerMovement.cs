@@ -151,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
   //   }
 
   void OnTriggerEnter2D(Collider2D other) {
-        // Applies the buff/debuff onto the player for 5 seconds
+        // Applies the buff/debuff onto the player for x seconds
         // and removes the object from the game screen
         Object obj = other.GetComponent<Object>();
         if (obj != null) {
@@ -176,17 +176,19 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Slow() {
         // Decreases the player speed
+        float prevSpeed = movespeed;
         movespeed *= (float) .75;
         yield return new WaitForSeconds(5f);
-        movespeed *= (float) 1.25;
+        movespeed = prevSpeed;
         Debug.Log("effects wore off!");
     }
 
     private IEnumerator SpeedUp() {
         // Increases the player speed
+        float prevSpeed = movespeed;
         movespeed *= (float) 1.25;
-        yield return new WaitForSeconds(5f);
-        movespeed *= (float) .75;
+        yield return new WaitForSeconds(10f);
+        movespeed = prevSpeed;
         Debug.Log("effects wore off!");
     }
 }
