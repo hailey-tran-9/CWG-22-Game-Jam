@@ -150,5 +150,43 @@ public class PlayerMovement : MonoBehaviour
   //   return;
   //   }
 
+  void OnTriggerEnter2D(Collider2D other) {
+        // Applies the buff/debuff onto the player for 5 seconds
+        // and removes the object from the game screen
+        Object obj = other.GetComponent<Object>();
+        if (obj != null) {
+          Debug.Log("Picked up an object!");
+          string type = obj.type;
 
+          // Apply buff/debuff
+          if (type == "buff") {
+              Debug.Log("prev speed: " + movespeed);
+              StartCoroutine(SpeedUp());
+              Debug.Log("curr speed: " + movespeed);
+          } else {
+              Debug.Log("prev speed: " + movespeed);
+              StartCoroutine(Slow());
+              Debug.Log("curr speed: " + movespeed);
+          }
+
+          // Remove object
+          Destroy(other.gameObject);
+        }
+    }
+
+    private IEnumerator Slow() {
+        // Decreases the player speed
+        movespeed *= (float) .75;
+        yield return new WaitForSeconds(5f);
+        movespeed *= (float) 1.25;
+        Debug.Log("effects wore off!");
+    }
+
+    private IEnumerator SpeedUp() {
+        // Increases the player speed
+        movespeed *= (float) 1.25;
+        yield return new WaitForSeconds(5f);
+        movespeed *= (float) .75;
+        Debug.Log("effects wore off!");
+    }
 }
