@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dreamPrefab: {fileID: 753270393673976615, guid: a27afd42657079349b2a7d4ffee0e1a0, type: 3}
-  timeBetweenWaves: 2
-  spawnDelay: 3
+  timeBetweenWaves: 1.23
+  spawnDelay: 1.39
   waveCountdown: 0
   state: 0
   numWaves: 0
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.38496292, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.38496292, g: 1, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
