@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dream : MonoBehaviour
 {
-    [SerializeField] private GameObject child;
+    [SerializeField] public GameObject child;
     [SerializeField] public float speed = 1f;
 
     public virtual void Action() {
@@ -32,7 +32,7 @@ public class Dream : MonoBehaviour
 
         if (transform.position.x == child.transform.position.x && transform.position.y == child.transform.position.y) {
             Action();
-            child.GetComponent<Child>().ReduceHp();
+            child.GetComponent<Child>().GainHp();
         }
     }
 }

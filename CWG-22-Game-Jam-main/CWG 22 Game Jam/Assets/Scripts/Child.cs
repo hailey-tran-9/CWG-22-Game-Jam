@@ -24,8 +24,17 @@ public class Child : MonoBehaviour
     }
 
     public void ReduceHp() {
-        currHp -= 5;
+        currHp -= 7;
         hpBar.SetHp(currHp);
+        Debug.Log("Lost 5 hp: " + currHp);
+    }
+
+    public void GainHp() {
+        int newHp = currHp + 2;
+        if (newHp <= 100) {
+            hpBar.SetHp(newHp);
+            currHp = newHp;
+        }
     }
 
     void QuitGame() {
