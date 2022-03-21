@@ -5,13 +5,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-      #region Movement_variables
+    #region Movement_variables
     public float movespeed;
     float x_input;
     float y_input;
     #endregion
   Vector2 currDirection;
-    
+      Animator anim;
+
   #region Physics_components
   Rigidbody2D PlayerRB;
   #endregion
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake() {
 
         PlayerRB = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
 
         netSoundSource = gameObject.AddComponent<AudioSource>();
         netSoundSource.clip = netSound;
@@ -62,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
         if (Input.GetKeyDown(KeyCode.J))
         {
+            anim.SetTrigger("swing");
             netSoundSource.Play();
             Debug.DrawLine(PlayerRB.position, PlayerRB.position + currDirection);
             RaycastHit2D[] hits = Physics2D.BoxCastAll(PlayerRB.position, new Vector2(2f, 2f), 0f, Vector2.zero, 0f);
@@ -81,8 +84,9 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-      private void Move()
+  private void Move()
   {
+    anim.SetBool("moving", true);
     if(x_input > 0){
       if (!footstepsSource.isPlaying) {
           footstepsSource.Play();

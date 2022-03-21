@@ -10,11 +10,13 @@ public class Timer : MonoBehaviour
     public float IncBy = 1;
     bool timerIsRunning = true;
     public Text timeText;
+    public GameObject NightmareSpawner
+
     void Update()
     {
         if (currTime < timeGoal)
         {
-            currTime += IncBy;
+            currTime += Time.deltaTime;
             DisplayTime(currTime);
         }
         else 
@@ -30,5 +32,11 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(currTime / 60); 
         float seconds = Mathf.FloorToInt(currTime % 60);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    //setting up checkpoints
+    void Checkpoint1() {
+        nightmareScrip = NightmareSpawner.GetComponent<Dream Spawner>;
+        
     }
 }
