@@ -12,5 +12,6 @@ public class Nightmare : Dream
     public override void Action() {
         // TODO change the child health 
         Destroy(gameObject);
+        child.GetComponent<Child>().ReduceHp();
     }
 }
