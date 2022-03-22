@@ -7,13 +7,14 @@ public class DreamSpawner : MonoBehaviour
 
     [SerializeField] public GameObject dreamPrefab;
     [SerializeField] public float timeBetweenWaves = 2f; 
-    [SerializeField] public float spawnDelay = 3f; 
+    [SerializeField] public float spawnDelay = 0.5f; 
     public enum SpawnState {SPAWNING, WAITING, COUNTING, READY, OFF};
     public float waveCountdown;
 
     [SerializeField] public SpawnState state; 
 
     [SerializeField] public int numWaves;
+    [SerializeField] public int currWaveSize;
     public int currWave;
     
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class DreamSpawner : MonoBehaviour
 
         waveCountdown = timeBetweenWaves;
         state = SpawnState.READY;
-        currWave = 1;
+        currWave = 0;
     }
 
     // Update is called once per frame
@@ -32,16 +33,12 @@ public class DreamSpawner : MonoBehaviour
             return;
         }
         if (state == SpawnState.WAITING) {
-            if (EnemiesAlive() == false) {
-                WaveCompleted();
-            } else {
-                return;
-            }
+            WaveCompleted(); 
         }
     
         if (waveCountdown <= 0) {
             if (state != SpawnState.SPAWNING) {
-                StartCoroutine(SpawnWave(currWave));
+                StartCoroutine(SpawnWave(currWaveSize));
             } 
         }
         else {
@@ -57,7 +54,7 @@ public class DreamSpawner : MonoBehaviour
         for (int i = 0; i < size; i++) {
             SpawnDream();
             RandomizePosition();
-            spawnDelay = Mathf.Max(spawnDelay - currWave*0.1f, 1f);
+            spawnDelay = Mathf.Max(spawnDelay);
             yield return new WaitForSeconds(spawnDelay);
         }
 
@@ -69,11 +66,6 @@ public class DreamSpawner : MonoBehaviour
     void WaveCompleted() {
         state = SpawnState.COUNTING; 
         waveCountdown = timeBetweenWaves;
-        if (currWave == numWaves) {
-            state = SpawnState.OFF;
-            Debug.Log("turned off");
-        }
-        currWave++;
     }
 
     void RandomizePosition() {

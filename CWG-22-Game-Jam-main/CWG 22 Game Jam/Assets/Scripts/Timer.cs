@@ -37,7 +37,6 @@ public class Timer : MonoBehaviour
 
     //setting up checkpoints
     void Checkpoint1() {
-        // nightmareScrip = NightmareSpawner.GetComponent<DreamSpawner>;
-        
+        // DreamSpawner nightmareScript = NightmareSpawner.GetComponent<DreamSpawner>;
     }
 }
