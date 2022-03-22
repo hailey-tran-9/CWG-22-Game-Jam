@@ -7,6 +7,7 @@ public class TitleScreen : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] public GameObject tutorialScreen;
+    [SerializeField] public GameObject creditsScreen;
     public AudioSource buttonSource;
     public AudioClip buttonSound;
 
@@ -32,8 +33,8 @@ public class TitleScreen : MonoBehaviour
     }
 
     public void StartGame() {
-       // SceneManager.LoadScene("PlayerMovementWithEnemies");
-       buttonSource.Play();
+        buttonSource.Play();
+       SceneManager.LoadScene("Bedroom");
     }
 
     public void OpenTutorial() {
@@ -44,5 +45,15 @@ public class TitleScreen : MonoBehaviour
     public void ExitTutorial() {
         buttonSource.Play();
         tutorialScreen.SetActive(false); 
+    }
+
+    public void OpenCredits() {
+        buttonSource.Play();
+        creditsScreen.SetActive(true);
+    }
+
+    public void ExitCredits() {
+        buttonSource.Play();
+        creditsScreen.SetActive(false);
     }
 }
