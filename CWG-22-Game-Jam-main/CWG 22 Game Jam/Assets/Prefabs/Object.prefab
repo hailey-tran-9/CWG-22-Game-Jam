@@ -123,3 +123,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 
+  buffSprite: {fileID: 21300000, guid: 7d6559cbd66480a43b4f80cf4208b93c, type: 3}
+  debuffSprite: {fileID: 21300000, guid: 7300d9d48000a5640957bcdeae6feb6f, type: 3}
