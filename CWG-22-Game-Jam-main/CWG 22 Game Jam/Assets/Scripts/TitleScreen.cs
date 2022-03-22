@@ -21,7 +21,7 @@ public class TitleScreen : MonoBehaviour
 
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.clip = music;
-        musicSource.volume = 0.3f;
+        musicSource.volume = 0.2f;
 
         musicSource.Play();
     }
@@ -55,5 +55,10 @@ public class TitleScreen : MonoBehaviour
     public void ExitCredits() {
         buttonSource.Play();
         creditsScreen.SetActive(false);
+    }
+
+    public void ExitGame() {
+        buttonSource.Play();
+        Application.Quit();
     }
 }
