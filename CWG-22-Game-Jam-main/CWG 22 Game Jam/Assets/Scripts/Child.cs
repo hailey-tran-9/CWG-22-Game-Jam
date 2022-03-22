@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Child : MonoBehaviour
 {
@@ -39,10 +38,6 @@ public class Child : MonoBehaviour
     }
 
     void QuitGame() {
-<<<<<<< HEAD
         Application.Quit();
-=======
-        SceneManager.LoadScene("GameOverScreen");
->>>>>>> e10eeb4ff42d08e9a39c26b968153a404602acc9
     }
 }
