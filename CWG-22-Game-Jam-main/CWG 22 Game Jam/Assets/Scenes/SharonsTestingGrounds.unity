@@ -2181,7 +2181,7 @@ MonoBehaviour:
   timeGoal: 50000
   IncBy: 0.001
   timeText: {fileID: 2052079213}
-  NightmareSpawner: {fileID: 0}
+  nightmareSpawner: {fileID: 0}
 --- !u!95 &632489889
 Animator:
   serializedVersion: 3

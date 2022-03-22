@@ -1,61 +1,67 @@
 fileFormatVersion: 2
-guid: 2eb2505fb3e47d64ab38c87d00531da9
+guid: 13ded63a35fea9b41b63d3d069bfde4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3486513967748984145
-    second: tile_wall 1_0
+      213: -2122485262764263302
+    second: tile_bruteForce_0
   - first:
-      213: -6025742392421992576
-    second: tile_wall 1_1
+      213: 3280609745905563686
+    second: tile_bruteForce_1
   - first:
-      213: 4876499655746910818
-    second: tile_wall 1_2
+      213: 7290201691450200349
+    second: tile_bruteForce_2
   - first:
-      213: -706475288118379499
-    second: tile_wall 1_3
+      213: 1227444913745046762
+    second: tile_bruteForce_3
   - first:
-      213: 5527976201359127145
-    second: tile_wall 1_4
+      213: -438340784503001290
+    second: tile_bruteForce_4
   - first:
-      213: -3914583607793513193
-    second: tile_wall 1_5
+      213: 5764662047409272965
+    second: tile_bruteForce_5
   - first:
-      213: -3782026447086294376
-    second: tile_wall 1_6
+      213: -6537891486633592896
+    second: tile_bruteForce_6
   - first:
-      213: 4174084638597052435
-    second: tile_wall 1_7
+      213: -6820856859007219795
+    second: tile_bruteForce_7
   - first:
-      213: 5478671467691561157
-    second: tile_wall 1_8
+      213: -3099997609261507560
+    second: tile_bruteForce_8
   - first:
-      213: -269012421732834986
-    second: tile_wall 1_9
+      213: -8293812272517729874
+    second: tile_bruteForce_9
   - first:
-      213: 8904474537408881905
-    second: tile_wall 1_10
+      213: -5990433390597461034
+    second: tile_bruteForce_10
   - first:
-      213: 7355488382815774159
-    second: tile_wall 1_11
+      213: 5531894139872887784
+    second: tile_bruteForce_11
   - first:
-      213: -1682898724520912698
-    second: tile_wall 1_12
+      213: 3992434827646162155
+    second: tile_bruteForce_12
   - first:
-      213: 8516666879698108968
-    second: tile_wall 1_13
+      213: -2966197298457521244
+    second: tile_bruteForce_13
   - first:
-      213: -7015831193858635459
-    second: tile_wall 1_14
+      213: -4977357747902592917
+    second: tile_bruteForce_14
   - first:
-      213: -8501847866754325201
-    second: tile_wall 1_15
+      213: 6424336842135761338
+    second: tile_bruteForce_15
   - first:
-      213: 5278870380501523453
-    second: tile_wall 1_16
+      213: -7182367229200449995
+    second: tile_bruteForce_16
   - first:
-      213: -3099320321406696244
-    second: tile_wall 1_17
+      213: 4422402745997108989
+    second: tile_bruteForce_17
+  - first:
+      213: 4995781653406829688
+    second: tile_bruteForce_18
+  - first:
+      213: 2422261937760110816
+    second: tile_bruteForce_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,300 +163,217 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile_wall 1_0
+      name: tile_bruteForce_0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 32
-        y: 96
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 0
         y: 96
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa252e7c40a6d9fc0800000000000000
-      internalID: -3486513967748984145
+      spriteID: a783fef16ea6b82e0800000000000000
+      internalID: -2122485262764263302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_1
+      name: tile_bruteForce_1
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 0
-        y: 96
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 32
         y: 96
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 087bca74833406ca0800000000000000
-      internalID: -6025742392421992576
+      spriteID: 628b267be21178d20800000000000000
+      internalID: 3280609745905563686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_2
+      name: tile_bruteForce_2
       rect:
         serializedVersion: 2
         x: 64
         y: 96
-<<<<<<< Updated upstream
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26afb10a99ecca340800000000000000
-      internalID: 4876499655746910818
+      spriteID: d1157df20dffb2560800000000000000
+      internalID: 7290201691450200349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_3
+      name: tile_bruteForce_3
       rect:
         serializedVersion: 2
         x: 96
         y: 96
-<<<<<<< Updated upstream
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51cbc11f7781236f0800000000000000
-      internalID: -706475288118379499
+      spriteID: aec222155a2c80110800000000000000
+      internalID: 1227444913745046762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_4
+      name: tile_bruteForce_4
       rect:
         serializedVersion: 2
         x: 128
-<<<<<<< Updated upstream
-        y: 97
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         y: 96
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 962f2d0111157bc40800000000000000
-      internalID: 5527976201359127145
+      spriteID: 63fe1210163bae9f0800000000000000
+      internalID: -438340784503001290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_5
+      name: tile_bruteForce_5
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 2
-        y: 65
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 0
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71d86e5f2fa9ca9c0800000000000000
-      internalID: -3914583607793513193
+      spriteID: 5887102f691300050800000000000000
+      internalID: 5764662047409272965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_6
+      name: tile_bruteForce_6
       rect:
         serializedVersion: 2
         x: 32
-<<<<<<< Updated upstream
-        y: 65
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89ae9420cfa838bc0800000000000000
-      internalID: -3782026447086294376
+      spriteID: 0c77727055eb445a0800000000000000
+      internalID: -6537891486633592896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_7
+      name: tile_bruteForce_7
       rect:
         serializedVersion: 2
         x: 64
-<<<<<<< Updated upstream
-        y: 65
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 318fdf11dd35de930800000000000000
-      internalID: 4174084638597052435
+      spriteID: da7861f33d27751a0800000000000000
+      internalID: -6820856859007219795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_8
+      name: tile_bruteForce_8
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 97
-        y: 65
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
-        x: 128
-        y: 23
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c0d2d03ca6280c40800000000000000
-      internalID: 5478671467691561157
+      spriteID: 81c586f49989af4d0800000000000000
+      internalID: -3099997609261507560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_9
+      name: tile_bruteForce_9
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 129
-        y: 65
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 128
         y: 64
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6516272b0a6444cf0800000000000000
-      internalID: -269012421732834986
+      spriteID: ea13ece3ea576ec80800000000000000
+      internalID: -8293812272517729874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_10
+      name: tile_bruteForce_10
       rect:
         serializedVersion: 2
         x: 0
@@ -458,54 +381,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
-      pivot: {x: 0.5, y: 0.5}
-=======
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f464c1f96c039b70800000000000000
-      internalID: 8904474537408881905
+      spriteID: 6dbacc6e194bddca0800000000000000
+      internalID: -5990433390597461034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_11
+      name: tile_bruteForce_11
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 33
-        y: 32
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 32
         y: 32
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc52f3f86b1f31660800000000000000
-      internalID: 7355488382815774159
+      spriteID: 8e34036396c35cc40800000000000000
+      internalID: 5531894139872887784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_12
+      name: tile_bruteForce_12
       rect:
         serializedVersion: 2
         x: 64
@@ -513,54 +423,62 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
-      pivot: {x: 0.5, y: 0.5}
-=======
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c819f3c68425a8e0800000000000000
-      internalID: -1682898724520912698
+      spriteID: be45fbaa25af76730800000000000000
+      internalID: 3992434827646162155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_13
+      name: tile_bruteForce_13
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 97
-        y: 33
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 96
         y: 32
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8228db26767413670800000000000000
-      internalID: 8516666879698108968
+      spriteID: 4a357bbc543f5d6d0800000000000000
+      internalID: -2966197298457521244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_14
+      name: tile_bruteForce_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b684a3cdf7fdceab0800000000000000
+      internalID: -4977357747902592917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_bruteForce_15
       rect:
         serializedVersion: 2
         x: 0
@@ -568,54 +486,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
-      pivot: {x: 0.5, y: 0.5}
-=======
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3983fd53b2c2ae90800000000000000
-      internalID: -7015831193858635459
+      spriteID: ab1f4f00254d72950800000000000000
+      internalID: 6424336842135761338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_15
+      name: tile_bruteForce_16
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 33
-        y: 2
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 32
         y: 0
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2522bfe86e530a80800000000000000
-      internalID: -8501847866754325201
+      spriteID: 53eb9111f0b135c90800000000000000
+      internalID: -7182367229200449995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_16
+      name: tile_bruteForce_17
       rect:
         serializedVersion: 2
         x: 64
@@ -623,48 +528,56 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
-      pivot: {x: 0.5, y: 0.5}
-=======
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfbdf1574a0524940800000000000000
-      internalID: 5278870380501523453
+      spriteID: df6aed8ddd78f5d30800000000000000
+      internalID: 4422402745997108989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile_wall 1_17
+      name: tile_bruteForce_18
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 97
-        y: 1
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
         x: 96
         y: 0
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc4876da6900df4d0800000000000000
-      internalID: -3099320321406696244
+      spriteID: 87c4abae1f4945540800000000000000
+      internalID: 4995781653406829688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_bruteForce_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e80421166a9d9120800000000000000
+      internalID: 2422261937760110816
       vertices: []
       indices: 
       edges: []
