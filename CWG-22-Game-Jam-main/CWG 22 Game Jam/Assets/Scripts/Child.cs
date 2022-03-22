@@ -38,6 +38,6 @@ public class Child : MonoBehaviour
     }
 
     void QuitGame() {
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 }
