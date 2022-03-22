@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Child : MonoBehaviour
 {
@@ -38,6 +39,6 @@ public class Child : MonoBehaviour
     }
 
     void QuitGame() {
-        UnityEditor.EditorApplication.isPlaying = false;
+        SceneManager.LoadScene("GameOverScreen");
     }
 }

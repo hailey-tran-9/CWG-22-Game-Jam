@@ -32,8 +32,8 @@ public class TitleScreen : MonoBehaviour
     }
 
     public void StartGame() {
-       // SceneManager.LoadScene("PlayerMovementWithEnemies");
-       buttonSource.Play();
+        buttonSource.Play();
+       SceneManager.LoadScene("Bedroom");
     }
 
     public void OpenTutorial() {
