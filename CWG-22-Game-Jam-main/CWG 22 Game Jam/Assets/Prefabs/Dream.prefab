@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6979292209262414062}
   - component: {fileID: 849844718234133901}
   - component: {fileID: 3860518033091555065}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4829,7 +4829,7 @@ GameObject:
   - component: {fileID: 7640897572120109498}
   - component: {fileID: 1804113561744902654}
   - component: {fileID: 9205979687956348716}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Dream
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -4981,7 +4981,7 @@ GameObject:
   - component: {fileID: 8629890509879174921}
   - component: {fileID: 2580301929969088615}
   - component: {fileID: 1874236618735354}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

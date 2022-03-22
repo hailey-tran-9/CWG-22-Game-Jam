@@ -10,7 +10,8 @@ public class Timer : MonoBehaviour
     public float IncBy = 1;
     bool timerIsRunning = true;
     public Text timeText;
-    public GameObject NightmareSpawner
+    public GameObject NightmareSpawner;
+    // public nightmareScrip;
 
     void Update()
     {
@@ -36,7 +37,7 @@ public class Timer : MonoBehaviour
 
     //setting up checkpoints
     void Checkpoint1() {
-        nightmareScrip = NightmareSpawner.GetComponent<Dream Spawner>;
+        // nightmareScrip = NightmareSpawner.GetComponent<DreamSpawner>;
         
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 386864003256123723}
   - component: {fileID: 3127586675716127095}
   - component: {fileID: 2160439171099051932}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Nightmare
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 2991928768997984972}
   - component: {fileID: 512518107954134248}
   - component: {fileID: 8624959104711968075}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4947,7 +4947,7 @@ GameObject:
   - component: {fileID: 6401948792656119375}
   - component: {fileID: 8223515193145680957}
   - component: {fileID: 2229038181452726214}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
