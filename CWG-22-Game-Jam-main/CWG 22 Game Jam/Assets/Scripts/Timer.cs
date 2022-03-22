@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Timer : MonoBehaviour
         {
             //endgame function
             timerIsRunning = false;
+            SceneManager.LoadScene("GameOverGood");
             currTime = 0;
         }
     }

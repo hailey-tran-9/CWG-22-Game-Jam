@@ -9,13 +9,21 @@ public class DialogueManager : MonoBehaviour
     public Dialogue dialogue;
     public Text dialogueText; 
     private Queue<string> sentences;
+    public AudioSource buttonSource;
+    public AudioClip buttonSound;
+    public bool started;
 
     // Start is called before the first frame update
     void Start()
     {
+        buttonSource = gameObject.AddComponent<AudioSource>();
+        buttonSource.clip = buttonSound;
+        buttonSource.volume = 0.4f;
         sentences = new Queue<string>();
         Time.timeScale = 0;
+        started = false;
         StartDialogue(dialogue);
+        
     }
 
     public void StartDialogue(Dialogue dialogue) {
@@ -29,6 +37,9 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence() {
+        if (started) {
+            buttonSource.Play();
+        }
         if (sentences.Count == 0) {
             EndDialogue();
             return;
@@ -36,6 +47,7 @@ public class DialogueManager : MonoBehaviour
             string sentence = sentences.Dequeue();
             dialogueText.text = sentence;
         }
+        started = true;
     }
 
     public void EndDialogue() {

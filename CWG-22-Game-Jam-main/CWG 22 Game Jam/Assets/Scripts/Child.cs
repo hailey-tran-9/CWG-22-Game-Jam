@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Child : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class Child : MonoBehaviour
     void Update()
     {
         if (currHp <= 0) {
-            QuitGame();
+            SceneManager.LoadScene("GameOverScreen");
         }
     }
 
